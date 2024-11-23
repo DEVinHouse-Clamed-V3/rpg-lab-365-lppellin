@@ -1,4 +1,5 @@
 import Arma from "./classes/Arma";
+import Inimigo from "./classes/Inimigo";
 import Personagem from "./classes/Personagem";
 
 const repulsor = new Arma('Repulsor', 'repulsores de energia do Iron Man', 30)
@@ -12,5 +13,20 @@ const thor = new Personagem('Thor', 100, 30)
 tony.equiparArma(repulsor)
 steve.equiparArma(escudo)
 thor.equiparArma(martelo)
+
+const caveira = new Inimigo('Caveira Vermelha', 100, 20)
+const thanos = new Inimigo('Thanos', 100, 30)
+const loki = new Inimigo('Loki', 100, 20)
+
+const espada = new Arma('Espada', 'espada de Thanos', 40)
+const cetro = new Arma('Cetro', 'cetro de Loki', 30)
+const manopla = new Arma('Manopla', 'manopla do infinito', 100)
+
+// const armas = [espada, cetro, manopla]
+// thanos.equiparArma(armas[Math.floor(Math.random() * armas.length)])
+// console.log(thanos.getArma())
+
+// thanos.equiparArma(manopla)
+// thanos.atacar(tony)
 
 

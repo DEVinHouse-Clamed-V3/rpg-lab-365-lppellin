@@ -27,7 +27,7 @@ export default class Personagem {
     receberDano(dano: number) {
         this.vida = this.vida - dano
         if (this.vida <= 0) {
-            console.log('Personagem ficou sem vida')
+            console.log(`${this.nome} ficou sem vida`)
         } else {
             console.log(`${this.nome} recebeu ${dano} de dano e ficou com ${this.vida} de vida`)
         }

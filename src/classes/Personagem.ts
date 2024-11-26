@@ -35,7 +35,7 @@ export default class Personagem {
 
     equiparArma(arma: Arma) {
         this.arma = arma
-        // console.log(this.nome + ": " + this.arma.getNome() + ' Equipado')
+        console.log(this.nome + ": " + this.arma.getNome() + ' Equipado')
     }
 
     protected causarDano() {

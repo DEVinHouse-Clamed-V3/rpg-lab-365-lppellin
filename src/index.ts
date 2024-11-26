@@ -22,11 +22,30 @@ const espada = new Arma('Espada', 'espada de Thanos', 40)
 const cetro = new Arma('Cetro', 'cetro de Loki', 30)
 const manopla = new Arma('Manopla', 'manopla do infinito', 100)
 
-// const armas = [espada, cetro, manopla]
-// thanos.equiparArma(armas[Math.floor(Math.random() * armas.length)])
-// console.log(thanos.getArma())
+const armas = [espada, cetro, manopla]
+thanos.equiparArma(armas[Math.floor(Math.random() * armas.length)])
+console.log(thanos.getArma())
 
 // thanos.equiparArma(manopla)
-// thanos.atacar(tony)
+thanos.atacar(tony)
+
+tony.equiparArma(manopla)
+tony.atacar(thanos)
+
+loki.equiparArma(cetro)
+loki.atacar(thor)
+
+thor.atacar(caveira)
+
+steve.equiparArma(escudo)
+steve.atacar(caveira)
 
 
+const spiderman = new Personagem('Peter Parker', 100, 20)
+const lancadorTeia = new Arma('Lançador de teias', 'Lança teias variadas, tecnologia Stark', 20)
+
+const lagarto = new Inimigo('Lagarto', 100, 27)
+
+spiderman.equiparArma(lancadorTeia)
+
+spiderman.atacar(lagarto)    

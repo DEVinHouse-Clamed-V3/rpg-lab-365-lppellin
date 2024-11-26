@@ -1,4 +1,5 @@
 import Arma from "./classes/Arma";
+import Chefe from "./classes/Chefe";
 import Inimigo from "./classes/Inimigo";
 import Personagem from "./classes/Personagem";
 
@@ -48,4 +49,9 @@ const lagarto = new Inimigo('Lagarto', 100, 27)
 
 spiderman.equiparArma(lancadorTeia)
 
-spiderman.atacar(lagarto)    
+spiderman.atacar(lagarto)
+
+const kang = new Chefe('Kang', 100, 50)
+
+kang.atacar(thor)
+kang.atacar(thanos) 
